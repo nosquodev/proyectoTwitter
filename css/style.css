@@ -1,0 +1,258 @@
+body {
+    padding: 0 120px;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+
+    background-color: #000;
+    color: white;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+nav {
+    grid-column: 1/6;
+    box-sizing: border-box;
+    padding: 0 10px 0 0;
+    height: 100vh;
+    border-right: solid;
+    border-color: rgb(139, 139, 139);
+    border-width: .5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 5px;
+    font-size: 1.4rem
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: fit-content;
+
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0;
+}
+
+nav ul li a box-icon {
+    margin-right: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #121212;
+}
+
+nav button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 60px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: rgb(33, 124, 235);
+    color: white;
+    margin-top: 30px;
+}
+
+nav button:hover {
+    background-color: rgb(30, 113, 214);
+}
+
+.btn-perfil {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 36px;
+}
+
+.btn-perfil:hover {
+    background-color: #121212;
+    cursor: pointer;
+}
+
+.btn-perfil .user-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-perfil .user-profile img {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+}
+
+.btn-perfil .user-profile p {
+    margin: 0;
+}
+
+.btn-perfil .user-profile .user-name {
+    font-weight: 600;
+}
+
+.btn-perfil .user-profile .user-id {
+    font-weight: 300;
+}
+
+
+
+
+/*-- FEED --*/
+
+
+main {
+    grid-column: 6/25;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main .feed{
+    grid-column: 1/3;
+    border-right: solid;
+    border-color: rgb(139, 139, 139);
+    border-width: 0.5px;
+}
+
+main .feed nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+}
+main .feed nav .data-user{
+    margin-left: 20px;
+}
+main .feed nav .data-user h2{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+main .feed nav .data-user p{
+    margin: 0;
+    padding: 0;
+    font-size: .8rem;
+}
+main .feed nav .data-user .n-tweets{
+    color: #949494;
+}
+main .feed header{
+    width: 100%;
+}
+main .feed header img{
+    width: 100%;
+}
+main .feed header .info-user{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 20px;
+}
+main .feed header .info-user .texto-user{
+    grid-column: 1/3;
+}
+.texto-user h1{
+    font-size: 18px;
+    margin: 0;
+}
+.texto-user .user-id{
+    font-size: 14px;
+    color: #949494;
+    margin: 0;
+}
+.texto-user .info-leyenda p{
+    margin: 10px 0;
+    font-weight: 400;
+}
+.texto-user .user-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.texto-user .user-data .item-user-data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 10px;
+    color: #949494;
+    font-size: 12px;
+}
+.texto-user .user-data .item-user-data box-icon{
+    margin-right: 10px;
+    width: 20px;
+}
+main .feed header .info-user .space-button{
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.space-button button{
+    padding: 8px 16px;
+    border-radius: 50px;
+    border: solid;
+    border-width: 1px;
+    border-color: #949494;
+    background-color: #000;
+
+    color: white;
+    font-weight: 600;
+}
+
+
+/*-- SUGERENCIAS --*/
+
+
+main .sugerencias{
+    grid-column: 3/4;
+}
+main .sugerencias nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+main .sugerencias nav .search-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40px;
+    width: 90%;
+    background-color: #121212;
+    padding: 0 10px;
+    border-radius: 50px;
+}
+main .sugerencias nav .search-box input{
+    background-color: #121212;
+    border: none;
+    padding-left: 10px;
+    color: white;
+    width: 100%;
+}
+
+
