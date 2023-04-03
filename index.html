@@ -10,30 +10,32 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href=""><box-icon name='twitter' type='logo' color='#ffffff'></box-icon></a></li>
-            <li><a href=""><box-icon name='home' color='#ffffff'></box-icon>Home</a></li>
-            <li><a href=""><box-icon name='hash' color='#ffffff'></box-icon>Explore</a></li>
-            <li><a href=""><box-icon name='bell' color='#ffffff'></box-icon>Notifications</a></li>
-            <li><a href=""><box-icon name='message-dots' color='#ffffff'></box-icon>Messages</a></li>
-            <li><a href=""><box-icon name='bookmark' color='#ffffff'></box-icon>Bookmarks</a></li>
-            <li><a href=""><box-icon name='twitter' type='logo' color='#ffffff'></box-icon>Twitter Blue</a></li>
-            <li><a href=""><box-icon name='user' color='#ffffff'></box-icon>Profile</a></li>
-            <li><a href=""><box-icon name='dots-horizontal-rounded' color='#ffffff'></box-icon>More</a></li>
-            <li><button class="tweet">Tweet</button></li>
-        </ul>
-        <div class="btn-perfil">
-            <div class="user-profile">
-                <img src="./assets/FotodePerfil.jpeg" alt="">
-                <div class="user-data">
-                    <p class="user-name">Ayrton Bolaños</p>
-                    <p class="user-id">@nosquodev</p>
+    <div class="menu-principal">
+        <nav>
+            <ul>
+                <li><a href=""><box-icon name='twitter' type='logo' color='#ffffff'></box-icon></a></li>
+                <li><a href=""><box-icon name='home' color='#ffffff'></box-icon>Home</a></li>
+                <li><a href=""><box-icon name='hash' color='#ffffff'></box-icon>Explore</a></li>
+                <li><a href=""><box-icon name='bell' color='#ffffff'></box-icon>Notifications</a></li>
+                <li><a href=""><box-icon name='message-dots' color='#ffffff'></box-icon>Messages</a></li>
+                <li><a href=""><box-icon name='bookmark' color='#ffffff'></box-icon>Bookmarks</a></li>
+                <li><a href=""><box-icon name='twitter' type='logo' color='#ffffff'></box-icon>Twitter Blue</a></li>
+                <li><a href=""><box-icon name='user' color='#ffffff'></box-icon>Profile</a></li>
+                <li><a href=""><box-icon name='dots-horizontal-rounded' color='#ffffff'></box-icon>More</a></li>
+                <li><button class="tweet">Tweet</button></li>
+            </ul>
+            <div class="btn-perfil">
+                <div class="user-profile">
+                    <img src="./assets/FotodePerfil.jpeg" alt="">
+                    <div class="user-data">
+                        <p class="user-name">Ayrton Bolaños</p>
+                        <p class="user-id">@nosquodev</p>
+                    </div>
                 </div>
+                <box-icon name='dots-horizontal-rounded' color='#ffffff'>
             </div>
-            <box-icon name='dots-horizontal-rounded' color='#ffffff'>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <main>
         <div class="feed">
             <nav>
@@ -60,7 +62,7 @@
                                 <p>Córdoba, México</p>
                             </div>
                             <div class="item-user-data">
-                                <box-icon name='calendar' color='#949494' ></box-icon>
+                                <box-icon name='calendar' color='#949494'></box-icon>
                                 <p>Joined March 2023</p>
                             </div>
                         </div>
@@ -74,6 +76,28 @@
                     </aside>
                 </div>
             </header>
+            <section class="posts">
+                <nav>
+                    <ul>
+                        <li class="select">Tweets</li>
+                        <li>Respuestas</li>
+                        <li>Fotos y videos</li>
+                        <li>Me gusta</li>
+                    </ul>
+                </nav>
+                <div class="post-item">
+                    <img src="./assets/FotodePerfil.jpeg" alt="" class="foto-perfil">
+                    <div class="post-item-content">
+                        <header>
+                            <p class="user-name">Ayrton Bolaños</p>
+                            <p>@nosquodev · 27 mar.</p>
+                        </header>
+                        <div class="contenido">
+                            <img src="./assets/FotoPublicacion1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
         <aside class="sugerencias">
             <nav>
